@@ -1,0 +1,55 @@
+.main-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-bg-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+        &:hover,
+        &:focus {
+            background-color: var(--blue-button-hover);
+        }
+}
+
+
+.close-button {
+
+    display: flex;
+    width: 30px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: var(--main-bg-color);
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    fill: #000000;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            fill: var(--accent-color);
+        }
+
+}
+

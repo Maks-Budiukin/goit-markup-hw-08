@@ -1,0 +1,32 @@
+.address {
+    font-style: normal;
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.71;
+
+        color: var(--main-bg-color);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--opacity {
+            opacity: 0.6;
+
+            }
+        
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+    }
+
+    &__item + &__item {
+        margin-top: 5px;
+        
+    }
+}
