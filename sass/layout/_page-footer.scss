@@ -4,9 +4,12 @@
     background-color: var(--secondary-bg-color);
 
         &__container {
-            display: flex;
             align-items: baseline;
             justify-content: space-between;
+
+            @media scren and (min-width: 1200px) {
+                display: flex;
+            }
         }
     
         &__logo {
