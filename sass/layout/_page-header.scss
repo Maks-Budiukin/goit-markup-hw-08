@@ -1,34 +1,98 @@
 .page-header {
-    border-bottom: 1px solid #ECECEC;
+    &__placement {
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    
+    }
 
-        &__menu {
+    &__logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__nav {
+        // margin-left: 93px;
+
+        @media screen and (max-width: 767px) {
             display: none;
+        }
 
-            @media screen and (min-width: 768px) {
-                display: flex;
+    }
+
+    &__contacts {
+        // margin-left: auto;
+
+        @media screen and (max-width: 767px) {
+                display: none;
+        }
+    }
+
+    &__button {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 40px;
+        height: 40px;
+        padding: 10px 0 10px 0;
+        outline-style: none;
+        border: none;
+        background-color: transparent;
+
+        fill: #000000;
+        
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                fill: var(--accent-color);
             }
-        }
 
-        &__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-           
-        }
-    
-        &__nav {
-            margin-left: 93px;
-        }
-    
-        &__contacts {
+        &--close {
+            margin-top: 10px;
+            
             margin-left: auto;
         }
 
-        &__button {
-            width: 40px;
-            height: 40px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        @media screen and (min-width: 768px) {
+            display: none;
         }
-}
+
+        
+        }
+    }
+
+    
+
+    
+
+
+
+
+
+
+// .page-header {
+//     border-bottom: 1px solid #ECECEC;
+
+//         &__container {
+//             display: flex;
+//             align-items: center;
+//         }
+    
+        // &__nav {
+        //     margin-left: 93px;
+        // }
+    
+        // &__contacts {
+        //     margin-left: auto;
+        // }
+// }
 

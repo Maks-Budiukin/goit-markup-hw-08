@@ -1,32 +1,85 @@
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.page-footer {
+    
     background-color: var(--secondary-bg-color);
 
-        &__container {
-            align-items: baseline;
-            justify-content: space-between;
+        @media screen and (max-width: 1199px) {
+        text-align: center;
+        }
 
-            @media scren and (min-width: 1200px) {
-                display: flex;
+        @media screen and (min-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
+
+        
+
+    &__container {
+
+        @media screen and (min-width: 768px) {
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-around;
             }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: space-between;
         }
+        
+        }
+
+
+    &__cta {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--main-bg-color);
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
+
+        }
+
     
-        &__logo {
-            color: var(--main-bg-color);
-            display: block;
-            margin-bottom: 20px;
-        }
+
     
-        &__cta {
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: var(--main-bg-color);
-            margin-bottom: 20px;
-        }
+
 }
+
+
+
+
+// .footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: var(--secondary-bg-color);
+
+//         &__container {
+//             display: flex;
+//             align-items: baseline;
+//             justify-content: space-between;
+//         }
+    
+//         &__logo {
+//             color: var(--main-bg-color);
+//             display: block;
+//             margin-bottom: 20px;
+//         }
+    
+//         &__cta {
+//             font-size: 14px;
+//             line-height: 1.14;
+//             letter-spacing: 0.03em;
+//             text-transform: uppercase;
+//             color: var(--main-bg-color);
+//             margin-bottom: 20px;
+//         }
+// }
 
 
 

@@ -1,34 +1,91 @@
 .offer {
-    
-        &__title {
-            margin-top: 30px;
-            font-size: 14px;
-            line-height: 1.14;
-            text-align: center;
-            text-transform: uppercase;
 
-            @media screen and (min-width: 768px) {
-                text-align: left;
-            }
-
-        }
-    
-        &__text {
-            margin-top: 10px;
-            font-size: 14px;
-            line-height: 1.71;
-            color: var(--secondary-text-color);
-        }
-    
-        &__icon-holder {
+    &__list {
+        @media screen and (min-width: 768px) {
             display: flex;
-            width: 100%;
-            height: 120px;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--section-bg-color);
-            border-radius: 4px;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 2);
+            margin: 15px;
         }
 
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 120px) / 4);
+        }
+    }
+
+    &__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 30px;
+
+        height: 120px;
+        background-color: var(--section-bg-color);
+
+    }
+
+    &__title {
+        margin-top: 30px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: var(--main-text-color);
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    }
+
+    &__text {
+
+        margin-top: 10px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--secondary-text-color);
+    }
 }
+
+
+
+
+
+// .offer {
+    
+//         &__title {
+//             margin-top: 30px;
+//             font-size: 14px;
+//             text-transform: uppercase;
+//         }
+    
+//         &__text {
+//             margin-top: 10px;
+//             font-size: 14px;
+//             line-height: 1.71;
+//             color: var(--secondary-text-color);
+//         }
+    
+//         &__icon-holder {
+//             display: flex;
+//             width: 100%;
+//             height: 120px;
+//             justify-content: center;
+//             align-items: center;
+//             background-color: var(--section-bg-color);
+//             border-radius: 4px;
+//         }
+
+// }
 

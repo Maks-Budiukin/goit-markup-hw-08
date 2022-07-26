@@ -1,42 +1,133 @@
 .team {
+
     background-color: var(--section-bg-color);
 
-        &__card {
-            flex-basis: 270px;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px;
-            background-color: var(--main-bg-color);
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
         }
-    
-        &__photo {
-            display: block;
-            max-width: 270px;
-            border: 0px;
+        
+        
+    }
+
+    &__item {
+        max-width: 450px;
+        padding-bottom: 24px;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--main-bg-color);
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 15px;
+            }
         }
-    
-        &__info {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 32px;
-            padding-right: 32px;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 2);
+            margin: 15px;
         }
-    
-        &__name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 120px) / 4);
         }
-    
-        &__position {
-            margin-top: 10px;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-            color: var(--secondary-text-color);
-        }
-    
-        &__socials {
-            margin-top: 16px;
-        }
+        
+    }
+
+    // &__item + &__item {
+    //     margin-top: 30px;
+
+    //     @media screen and (min-width: 768px) {
+    //         margin-top: 0;
+    //     }
+
+        
+    // }
+
+    &__thumb {
+        
+
+    }
+
+    &__photo {
+        
+        
+        
+    }
+
+    &__info {
+        justify-content: center;
+        
+        
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        color: var(--secondary-text-color);
+    }
+
+    &__name {
+        margin-top: 30px;
+
+        font-weight: 500;
+        color: var(--main-text-color);
+
+    }
+
+    &__position {
+        margin-top: 10px;
+
+    }
+
+    &__socials {
+        margin-top: 16px;
+    }
+
 }
+
+
+// .team {
+//     background-color: var(--section-bg-color);
+
+//         &__card {
+//             flex-basis: 270px;
+//             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//             border-radius: 0px 0px 4px 4px;
+//             background-color: var(--main-bg-color);
+//         }
+    
+//         &__photo {
+//             display: block;
+//             max-width: 270px;
+//             border: 0px;
+//         }
+    
+//         &__info {
+//             padding-top: 30px;
+//             padding-bottom: 30px;
+//             padding-left: 32px;
+//             padding-right: 32px;
+//         }
+    
+//         &__name {
+//             font-weight: 500;
+//             font-size: 16px;
+//             line-height: 1.19;
+//             text-align: center;
+//         }
+    
+//         &__position {
+//             margin-top: 10px;
+//             font-size: 16px;
+//             line-height: 1.19;
+//             text-align: center;
+//             color: var(--secondary-text-color);
+//         }
+    
+//         &__socials {
+//             margin-top: 16px;
+//         }
+// }

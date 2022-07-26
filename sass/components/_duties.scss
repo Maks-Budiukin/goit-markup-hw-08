@@ -1,8 +1,18 @@
 .duties {
     padding-top: 0px;
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+        &__list {
+            display: flex;
+            margin: -15px;
+        }
 
         &__item {
             position: relative;
+            margin: 15px;
         }
     
         &__image {
@@ -27,10 +37,6 @@
             background-color: #2F303ACC;
     
             color: var(--main-bg-color);
-        }
-    
-        @media screen and (max-width: 767px) {
-            display: none;
         }
 
 }
