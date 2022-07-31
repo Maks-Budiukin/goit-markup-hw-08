@@ -1,11 +1,12 @@
 .page-header {
+    border-bottom: 1px solid #ececec;
     &__placement {
     
     display: flex;
     
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ececec;
+    
     
     }
 

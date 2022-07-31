@@ -1,6 +1,8 @@
 .offer {
 
     &__list {
+
+        
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
@@ -9,6 +11,14 @@
     }
 
     &__item {
+        &:not(:last-child) {
+        @media screen and (max-width: 768px){
+                margin-bottom: 30px;
+            }
+        }
+
+        
+
         @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 60px) / 2);
             margin: 15px;
@@ -24,7 +34,7 @@
         align-items: center;
         justify-content: center;
 
-        margin-top: 30px;
+        
 
         height: 120px;
         background-color: var(--section-bg-color);
