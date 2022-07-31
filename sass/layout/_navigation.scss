@@ -1,38 +1,3 @@
-// .navigation {
-//     &__menu {
-//         padding-top: 32px;
-//         padding-left: 32px;
-//     }
-
-//     &__link {
-//         display: block;
-//         padding-top: 16px;
-//         padding-right: 8px;
-//         padding-bottom: 16px;
-//         padding-left: 8px;
-
-
-//         font-weight: 500;
-//         font-size: 40px;
-//         line-height: 1.18;
-//         letter-spacing: 0.02em;
-    
-//         color: var(--main-text-color);
-
-//         transition-property: color;
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//         &:hover,
-//         &:focus {
-//             color: var(--accent-color);
-//         }
-
-        
-//     }
-// }
-
-
 .navigation {
     display: flex;
     align-items: center;

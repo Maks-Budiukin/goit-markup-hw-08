@@ -1,6 +1,7 @@
 .modal {
     position: absolute;
     width: 450px;
+    max-width: 100vw;
     height: 609px;
     padding: 40px;
     top: 50%;
@@ -125,7 +126,7 @@
 
 .terms {
     
-    white-space: nowrap;
+    white-space: wrap;
 
     @media screen and (min-width: 1200px) {
         text-align: center;
@@ -155,6 +156,7 @@
     &__text {
         font-size: 12px;
         line-height: 1.17;
+        
         @media screen and (min-width: 1200px) {
                 font-size: 14px;
                 line-height: 1.71;
@@ -176,11 +178,13 @@
     }
 
     &__check {
-        margin-right: 7px;
+        margin-right: 5px;
         fill: transparent;
 
 
         .terms__checkbox+& {
+
+            flex-shrink: 0;
             stroke: #212121;
             stroke-width: 2px;
 

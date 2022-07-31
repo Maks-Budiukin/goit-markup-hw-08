@@ -15,7 +15,7 @@
     }
 
     &__nav {
-        // margin-left: 93px;
+        
 
         @media screen and (max-width: 767px) {
             display: none;
@@ -24,7 +24,7 @@
     }
 
     &__contacts {
-        // margin-left: auto;
+        
 
         @media screen and (max-width: 767px) {
                 display: none;
@@ -69,30 +69,3 @@
         
         }
     }
-
-    
-
-    
-
-
-
-
-
-
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
-
-//         &__container {
-//             display: flex;
-//             align-items: center;
-//         }
-    
-        // &__nav {
-        //     margin-left: 93px;
-        // }
-    
-        // &__contacts {
-        //     margin-left: auto;
-        // }
-// }
-
