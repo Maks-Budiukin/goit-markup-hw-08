@@ -32,7 +32,7 @@
 
 
     &__cta {
-        margin-top: 60px;
+        
         margin-bottom: 20px;
         font-size: 14px;
         line-height: 1.14;
@@ -45,8 +45,23 @@
 
         }
 
-    
+    &__address {
+        
+    }
 
-    
+    &__socials {
+        margin-top: 60px;
 
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    &__subscribe {
+        margin-top: 60px;
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+        }
+    }
 }
